@@ -1,0 +1,203 @@
+*{
+  //border: solid 1px red;
+}
+
+#navbar{
+  transition: top 0.5s;
+}
+
+.bg_black{
+  background-color:rgb(0,0,0);
+}
+
+.bg-nav{
+  background-image:url(https://i.pinimg.com/564x/a6/20/ca/a620cad405581ea912edf3b1aef38a55.jpg);
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+ 
+  
+}
+
+.nav-item{
+  padding-left:10px;
+  padding-right:10px;
+}
+.nav-item:hover {
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  font-size:17px;
+}
+
+.dropdown-menu li:hover .sub-menu {visibility: visible;}
+.dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown-menu{
+  background-color: rgba(0, 0, 0, 0.4) !important; 
+  background-blend-mode: multiply !important;
+}
+
+.dropdown-item{
+  color: white !important;
+}
+.dropdown-item:hover{
+  color:gray !important;
+}
+.dropdown-item:active{
+  color:white !important;
+  background-color: grey !important;
+}
+
+:target:before {
+content: "";
+display: block;
+height: 75px;
+}
+
+.banner{
+  padding-bottom:15px;
+  width: 88%;
+  display: block;
+  margin: auto;
+}
+
+section{
+  padding-bottom:20px;
+}
+
+h3{
+  font-weight:bold;
+}
+
+hr{
+  background-color:DarkGoldenRod; 
+  height:1px;
+  border:none;
+}
+
+.news_title{
+  margin-top: 130px;
+  border-color: DarkGoldenRod;
+  border-left-width: 4px;
+}
+
+.first-column { 
+  border-right-style:double;
+  border-color: DarkGoldenRod;
+}  
+
+@media screen and (max-width: 575.5px){
+  .news_title{
+    margin-top:0;
+  }
+  .first-column { 
+  border-right-style:none;
+}  
+}
+
+h4{
+  border-left-style: solid;
+  padding-left: 5px;
+}
+
+.prizename{
+  border-style: none;
+  color: tomato;
+}
+
+.card-title{
+  border-style: none;
+  font-weight: bold;
+  border-bottom-style: solid;
+  padding-bottom: 5px;
+  border-color: DarkGoldenRod;
+}
+
+.btn-outline-primary{
+  border-color: GoldenRod !important;
+  color: GoldenRod !important; 
+}
+
+.btn-outline-primary:hover{
+  background-color: GoldenRod !important;
+  border-color: GoldenRod !important;
+  color: white !important; 
+}
+
+.btn-outline-primary:active{
+  background-color: DarkGoldenRod !important;
+  border-color: DarkGoldenRod !important;
+  color: white !important; 
+}
+
+.btn{
+  float:right;
+}
+
+.card-title{
+  text-align: center;
+}
+
+#GMA img{
+  border-radius: 10px;
+}
+
+.box1{
+  background-image: url(https://i.pinimg.com/564x/d3/fa/e9/d3fae911e0e4d4ba50947d026d31798e.jpg);
+  background-size:50%;
+  background-position-y: 50px;
+  transition: 1s;
+}
+
+.box1:hover{
+  background-size:75%;
+  background-position-y: 50px;
+  font-size: 30px;
+}
+
+.box2{
+  background-image: url(https://i.pinimg.com/564x/d3/fa/e9/d3fae911e0e4d4ba50947d026d31798e.jpg);
+  background-size:50%;
+  background-position-y: 100px;
+  transition: 1s;
+}
+
+.box2:hover{
+  background-size:75%;
+  background-position-y: 100px;
+  font-size: 30px;
+}
+
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
